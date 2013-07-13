@@ -1,7 +1,7 @@
 module I18n
   module Alchemy
     # Depend on AS::BasicObject which has a "blank slate" - no methods.
-    class Proxy < ActiveSupport::BasicObject
+    class Proxy < ActiveSupport::ProxyObject
       include AttributesParsing
 
       # TODO: cannot assume _id is always a foreign key.
